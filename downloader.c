@@ -22,7 +22,9 @@ void download_video(const char *url, const char *quality) {
     }
 
     // Construct yt-dlp command
-    snprintf(command, sizeof(command), "yt-dlp -f \"%s\" -o \"%%(title)s.%%(ext)s\" --progress \"%s\"", format, url);
+    snprintf(command, sizeof(command), 
+    "yt-dlp -f \"%s\" -o \"C:\\Users\\HP\\Downloads\\%%(title)s.%%(ext)s\" --progress \"%s\"", format, url);
+
 
     printf("\n📥 Downloading video in %s quality...\n", quality);
 
